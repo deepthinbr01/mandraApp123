@@ -18,4 +18,21 @@
   <build>
     <finalName>MandraApp</finalName>
   </build>
+   <distributionManagement>
+        <repository>
+    <id>maven2</id>
+    <url>http://35.227.113.12:8081/nexus/content/repositories/maven2</url>
+  </repository>
+        <snapshotRepository>
+                <id>maven</id>
+    <url>http://35.227.113.12:8081/nexus/content/repositories/maven</url>
+          </snapshotRepository>
+    </distributionManagement>
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>3.0.1</version>
+  	</dependency>
+  </dependencies>
 </project>
